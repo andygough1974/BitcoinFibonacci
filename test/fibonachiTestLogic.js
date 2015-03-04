@@ -36,6 +36,10 @@ function testFibonachi(_fibonachiFunction) {
     for (var index = 0; index < expectedResult.length; index++) {
 
         unitTestResult = (expectedResult[index].value == _fibonachiFunction(expectedResult[index].number));
+        
+        if (unitTestResult == false) {
+            break;
+        }
 
         //console.log('Testing number =>', expectedResult[index].value);
         //console.log('Expected result => ', expectedResult[index].number);
