@@ -3,7 +3,7 @@
 function jobDone() {
 
     // this function are checking all unit tests and return true if job is done
- var expectedResult = [
+    var expectedResult = [
         {
             number : 0,
             value : 1
@@ -31,33 +31,14 @@ function jobDone() {
     ];
 
     var unitTestResult = true;
-
-    //console.log('<==== Unit test run ======>');
-
     for (var index = 0; index < expectedResult.length; index++) {
 
         unitTestResult = (expectedResult[index].value == _fibonachiFunction(expectedResult[index].number));
-
-        //console.log('Testing number =>', expectedResult[index].value);
-        //console.log('Expected result => ', expectedResult[index].number);
-
-//        if (unitTestResult == true) {
-//            console.log('Test state SUCCESS');
-//
-//        } else {
-//            console.log('Test state FAIL');
-//            break;
-//        }
+        if (unitTestResult == false) {
+            break;
+        }
     }
-
-//    if (unitTestResult == true) {
-//        console.log('Unit test complete with SUCCESS result');
-//    } else {
-//        console.log('Unit test complete with FAIL result');
-//    }
-
     return unitTestResult;
-
 }
 
 exports.main = jobDone;
