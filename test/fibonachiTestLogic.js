@@ -30,35 +30,14 @@ function testFibonachi(_fibonachiFunction) {
     ];
 
     var unitTestResult = true;
-
-    //console.log('<==== Unit test run ======>');
-
     for (var index = 0; index < expectedResult.length; index++) {
-
-        unitTestResult = (expectedResult[index].value == _fibonachiFunction(expectedResult[index].number));
-        
-        if (unitTestResult == false) {
-            break;
+        var actual = _fibonachiFunction(expectedResult[index].number;
+        var expected = expectedResult[index].value;
+        var result = actual == expected;
+        if (result == false) {
+            unitTestResult = result;
         }
-
-        //console.log('Testing number =>', expectedResult[index].value);
-        //console.log('Expected result => ', expectedResult[index].number);
-
-//        if (unitTestResult == true) {
-//            console.log('Test state SUCCESS');
-//
-//        } else {
-//            console.log('Test state FAIL');
-//            break;
-//        }
     }
-
-//    if (unitTestResult == true) {
-//        console.log('Unit test complete with SUCCESS result');
-//    } else {
-//        console.log('Unit test complete with FAIL result');
-//    }
-
     return unitTestResult;
 
 }
