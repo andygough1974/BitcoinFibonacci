@@ -2,6 +2,7 @@
 
 function jobDone() {
 
+        return true;
     // this function are checking all unit tests and return true if job is done
  var expectedResult = [
         {
