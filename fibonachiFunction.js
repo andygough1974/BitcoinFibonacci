@@ -2,6 +2,8 @@
 
 function fibonachiNumber(n) {
 
+    return 0;
+     
     if (n < 2) {
         return 1;
     } else {
