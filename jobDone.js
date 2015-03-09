@@ -42,7 +42,7 @@ function jobDone() {
 
     var unitTestResult = true;
     for (var index = 0; index < expectedResult.length; index++) {
-        var actual = fibonachiNumber(expectedResult[index].number;
+        var actual = fibonachiNumber(expectedResult[index].number);
         var expected = expectedResult[index].value;
         var result = (actual == expected);
         if (result == false) {
