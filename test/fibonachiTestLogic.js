@@ -31,7 +31,7 @@ function testFibonachi(_fibonachiFunction) {
 
     var unitTestResult = true;
     for (var index = 0; index < expectedResult.length; index++) {
-        var actual = _fibonachiFunction(expectedResult[index].number;
+        var actual = _fibonachiFunction(expectedResult[index].number);
         var expected = expectedResult[index].value;
         var result = actual == expected;
         if (result == false) {
