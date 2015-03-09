@@ -1,6 +1,6 @@
 
 
-function jobDone() {
+function jobDone(_fibonachiFunction) {
 
         return true;
 //     // this function are checking all unit tests and return true if job is done
