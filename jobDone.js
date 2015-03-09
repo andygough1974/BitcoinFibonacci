@@ -12,6 +12,7 @@ function fibonachiNumber(n) {
 
 function jobDone() {
 
+    return false;
     //this function are checking all unit tests and return true if job is done
     var expectedResult = [
         {
